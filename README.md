@@ -13,20 +13,17 @@ This project was created by **Mohammad Meelad (MeeladProE1)** to simplify traffi
 ## Features
 
 * **Dynamic Routing:** Automatically detects and directs traffic.
-
 * **Local Execution:** Fully operational on your own local machine.
-
 * **Lightweight:** Designed for efficiency.
-
 * **Easy Config:** Simple JSON/YAML routing rules.
 
 ## Getting Started
 
-### Using NPM
+### Using NPM (Local Computer)
 
 You can easily run Omniroute on your computer using `npm`. Ensure you have [Node.js](https://nodejs.org/) installed, then run:
 
-```
+```bash
 # Install dependencies
 npm install
 
@@ -34,29 +31,29 @@ npm install
 npm start
 ```
 
-### Cloning from Repository
+### Testing in GitHub Codespaces
 
-Alternatively, you can clone the repository to your local machine:
+If you want to test Omniroute in the cloud, you can fork this repository and create a Codespace:
 
-```
-# Clone the repository
-git clone [https://github.com/MeeladProE1/Omniroute.git](https://github.com/MeeladProE1/Omniroute.git)
+1. Fork this repository.
+2. Create a new Codespace for your fork.
+3. Once the terminal is ready, run the following setup script:
 
-# Navigate to the directory
-cd Omniroute
-
-# Make the setup script executable
-chmod +x setup.sh
+```bash
+# Make the run script executable
+chmod +x run.sh
 
 # Initialize the environment
-./setup.sh
+./run.sh
 ```
+
+4. After running the tool, check the **"Ports"** tab in your VS Code interface to find the link provided by GitHub to access your running service.
 
 ## How to Find Your Local IP Address
 
 To find your local IP address on your computer, run:
 
-```
+```bash
 # Linux/macOS
 hostname -I | awk '{print $1}'
 
